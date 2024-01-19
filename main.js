@@ -52,21 +52,19 @@ const arrayOggetti = [
 
 console.log(arrayOggetti);
 
-for( let i = 0; i < arrayPosts.length; i++ ){
-   let elemento = arrayPosts[i]
+for (let i = 0; i < arrayOggetti.length; i++) {
+    let elemento = arrayOggetti[i];
 
-document.querySelector("main .row").innerHTML += `
-    <div class="card col">
+    document.querySelector("main .row").innerHTML += `
+        <div class="card col">
             <img class="card-img-top" src='${elemento.foto}' alt="Title" />
             <div class="card-body">
                 <h4 class="card-title">
-                ${elemento.nome}
+                    ${elemento.nome}
                 </h4>
                 <p class="card-text">
-                ${elemento.ruolo}
+                    ${elemento.ruolo}
                 </p>
             </div>
-    </div>
-
+        </div>`;
 }
-
